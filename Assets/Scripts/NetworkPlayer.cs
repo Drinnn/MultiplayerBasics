@@ -14,7 +14,6 @@ public class NetworkPlayer : NetworkBehaviour {
     [Server]
     public void SetDisplayName(string newDisplayName) {
         displayName = newDisplayName;
-        RpcLogNewName(newDisplayName);
     }
 
     [Server]
@@ -24,7 +23,10 @@ public class NetworkPlayer : NetworkBehaviour {
 
     [Command]
     private void CmdSetDisplayName(string newDisplayName) {
-        SetDisplayName(newDisplayName);
+        if (newDisplayName.Length <= 4 && newDisplayName.Length <= 12) {
+            SetDisplayName(newDisplayName);
+            RpcLogNewName(newDisplayName);
+        }
     }
 
     #endregion
