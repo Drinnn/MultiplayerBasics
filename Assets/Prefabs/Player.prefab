@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 2173427338365820286}
   - component: {fileID: 5725644822480200953}
   - component: {fileID: 398943727064908850}
+  - component: {fileID: 1074084449254398678}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -298,6 +299,29 @@ MonoBehaviour:
   displayColorRenderer: {fileID: 8180128695894412323}
   displayName: Missing Name
   displayColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &1074084449254398678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099979360072571159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  localPositionSensitivity: 0.01
+  localRotationSensitivity: 0.01
+  localScaleSensitivity: 0.01
+  compressRotation: 0
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 1
+  syncScale: 1
 --- !u!1 &7099807393144772317
 GameObject:
   m_ObjectHideFlags: 0
